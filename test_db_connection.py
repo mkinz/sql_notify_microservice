@@ -14,6 +14,7 @@ def test_connection_method_on_object_with_keyword_overrides():
     dut = DBConnector(username, password, connection_str)
     assert dut.username == "matt"
     assert dut.password == "password"
+    assert dut.connection_str == "testtest"
 
 
 def test_connection_method_on_object():
