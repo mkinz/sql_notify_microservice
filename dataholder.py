@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Protocol, List
 from dataclasses import dataclass
 
 
@@ -8,4 +8,6 @@ class IDataHolder(Protocol):
 
 @dataclass
 class DataHolder:
-    pass
+    sql_data: List[str]
+
+
