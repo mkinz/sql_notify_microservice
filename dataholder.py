@@ -9,5 +9,3 @@ class IDataHolder(Protocol):
 @dataclass
 class DataHolder:
     sql_data: List[str]
-
-
