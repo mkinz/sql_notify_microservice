@@ -16,5 +16,3 @@ class DBConnector:
     def connect_do_database(self, *args):
         self.connected = True
         return f"Connected to database {self.connection_str}"
-
-
