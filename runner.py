@@ -14,7 +14,3 @@ class Runner:
             print(f"{worker_bee.data_holder.sql_data}")
         else:
             pass
-
-
-runner = Runner()
-runner.run_it()
