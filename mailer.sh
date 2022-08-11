@@ -13,7 +13,7 @@ EMAIL_REPORT=$(python main.py)
 
 if [[ $EMAIL_REPORT ]]; then
   echo "Sending email report..."
-  echo "$EMAIL_REPORT"
+  echo "$EMAIL_REPORT" # for now, print email report -> but eventually uncomment the following line
   #/usr/sbin/sendmail "$EMAIL_REPORT" $recipients
 else
   echo "Email Report is Empty...Exiting"

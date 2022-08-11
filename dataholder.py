@@ -12,3 +12,7 @@ class DataHolder:
 
     def get_hash_of_sql_data(self):
         return hash(str(''.join(self.sql_data)))
+
+    def print_contents_of_dataholder(self):
+        for item in self.sql_data:
+            print(item)
