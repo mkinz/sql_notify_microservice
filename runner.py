@@ -2,6 +2,7 @@ from sqlhelper import GenericSQLHelper
 
 
 class Runner:
+
     def run_it(self):
         worker_bee = GenericSQLHelper()
         schema = "test_schema"

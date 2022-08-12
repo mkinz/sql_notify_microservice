@@ -8,6 +8,7 @@ class IDBConnector(Protocol):
 
 @dataclass
 class DBConnector:
+
     username: str = "test_user"
     password: str = "test_password"
     connection_str: str = "mock_db_connection"
