@@ -6,7 +6,12 @@ from dataholder import DataHolder
 
 
 class ISQLHelper(Protocol):
-    ...
+
+    def execute_sql(self, schema: str, table: str) -> str:
+        ...
+
+    def write_sql_to_data_holder(self, query_data):
+        ...
 
 
 class GenericSQLHelper:

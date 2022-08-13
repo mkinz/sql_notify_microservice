@@ -3,7 +3,9 @@ from dataclasses import dataclass
 
 
 class IDBConnector(Protocol):
-    ...
+
+    def connect_do_database(self, *args):
+        ...
 
 
 @dataclass
